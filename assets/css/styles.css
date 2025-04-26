@@ -4,7 +4,6 @@
 
 :root{
     --height:56px;
-    --header-bg:#FFF6ED;
     --primary-heading-color:#000958;
 }
 
@@ -45,11 +44,11 @@ a{
 
 .btn{
     display: inline-block;
-    min-width: 173px;
+    min-width: 130px;
     height: var(--height);
     padding: 0 20px;
     border-radius: 99px;
-    border: 1px solid #000958;
+    border: 1px solid rgb(0, 9, 88, 0.7);
     text-align: center;
     font-weight: 600;
     font-size: 1.4rem;
@@ -107,13 +106,7 @@ a{
 /* Header */
 .header{
     min-height: 100vh;
-    padding-top: 28px;
-    background: var(--header-bg);
-}
-
-.logo{
-    display: flex;
-    align-items: center;
+    padding-top: 26px;
 }
 
 .logo__brand{
@@ -139,20 +132,29 @@ a{
 }
 
 .navbar__link{
-    padding: 16px 19px;
+    padding: 8px 18px;
     font-weight: 500;
     font-size: 1.4rem;
+    line-height: 1;
     color: #5E6085;
 }
 
 .navbar__link:hover,
 .navbar__link--active{
-    font-weight: 600;
     color: var(--primary-heading-color);
     text-shadow: 1px 0 0 currentColor;
 }
 
+.header-action__link{
+    padding-right:15px ;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #5E6085;
+}
+
 .header-action__signup{
+    --height:50px;
+
     margin-left: auto;
     min-width: 117px;
 }
