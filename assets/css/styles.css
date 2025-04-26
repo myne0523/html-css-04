@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --height:56px;
+    --header-bg:#FFF6ED;
+    --primary-heading-color:#000958;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Sora", sans-serif;
+}
+
+input, textarea, select, button{
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.container{
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+input, textarea, select, button{
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Common */
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    min-width: 173px;
+    height: var(--height);
+    padding: 0 20px;
+    border-radius: 99px;
+    border: 1px solid #000958;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: var(--height);
+    color: #000958;
+    background: var(--primary-color);
+}
+
+.btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.section-heading{
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.23;
+    color: #152427;
+}
+
+.section-desc{
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.625;
+    color: var(--primary-desc-color);
+}
+
+
+.control{
+    display: flex;
+    column-gap: 18px;
+}
+
+.control__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1px solid #575F66;
+    outline:none;
+    color: #152427;
+    background: #E2EDDF;
+    transition: .25s;
+}
+
+.control__btn:hover{
+    color: #FFFFFF;
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Header */
+.header{
+    min-height: 100vh;
+    padding-top: 28px;
+    background: var(--header-bg);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo__brand{
+    margin-left: 10px;
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.6;
+    color: var(--primary-heading-color);
+}
+
+/* Header  */
+.header-top{
+    position: relative;
+    display: flex;
+    align-items:center ;
+    justify-content:space-between ;
+}
+
+.navbar__list{
+    display: flex;
+    margin-left: 229px;
+}
+
+.navbar__link{
+    padding: 16px 19px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #5E6085;
+}
+
+.navbar__link:hover,
+.navbar__link--active{
+    font-weight: 600;
+    color: var(--primary-heading-color);
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action__signup{
+    margin-left: auto;
+    min-width: 117px;
+}
