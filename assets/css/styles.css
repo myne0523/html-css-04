@@ -5,6 +5,7 @@
 :root{
     --height:56px;
     --primary-heading-color:#000958;
+    --primary-desc-color:#656689;
 }
 
 html{
@@ -63,16 +64,17 @@ a{
 }
 
 .section-heading{
-    font-weight: 600;
-    font-size: 42px;
-    line-height: 1.23;
-    color: #152427;
+    font-family: Sora;
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.19;
+    color: var(--primary-heading-color);
 }
 
 .section-desc{
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 1.625;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
     color: var(--primary-desc-color);
 }
 
@@ -118,7 +120,7 @@ a{
     color: var(--primary-heading-color);
 }
 
-/* Header  */
+/* Header top */
 .header-top{
     position: relative;
     display: flex;
@@ -157,4 +159,183 @@ a{
 
     margin-left: auto;
     min-width: 117px;
+}
+
+/* Hero */
+.hero{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__media{
+    width: 52%;
+}
+
+.hero__media-wrap{
+    position: relative;
+    padding-bottom: 94px;
+}
+
+.hero__img-01{
+    width: 388px;
+    height: 488px;
+    object-fit: cover;
+    border: 3px solid #FFFFFF;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #FFA78D 0%, #FF8C60 100%);
+    box-shadow: 11px 18px 65px 0px #FF9B791F;
+}
+
+.hero__img-02{
+    position: absolute;
+    left: 365px;
+    bottom: 36px;
+    width: 186px;
+    height: 244px;
+    object-fit: cover;
+    border: 2px solid #FFFFFFA6;
+    border-radius: 16px;
+    background: linear-gradient(205.64deg, #FAA7AD 4.68%, #E87F8A 98.09%);
+    z-index: 1;
+}
+
+.stat__group{
+    position: absolute;
+    bottom: 0px;
+    left: 129px;
+    width: 250px;
+    border: 2px solid #F2F2F2;
+    border-radius: 10px;
+    box-shadow: -17px 14px 68px -4px #CFAE8440;
+    background: #FFFFFF;
+    padding: 18px 16px;
+    z-index: 2;
+}
+
+.stat__item{
+    display: flex;
+    column-gap: 10px;
+}
+
+.stat__item:first-of-type{
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 23px;
+}
+
+.stat__item:first-of-type::after{
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    width: 222px;
+    height: 2px;
+    border: 2px solid #F2F2F2;
+    border-radius: 10px;
+    background: rgb(51,58,121,0.08);
+}
+
+.stat__thumb{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #FEC23F;
+}
+
+.stat__item:nth-of-type(2) .stat__thumb {
+    background-color: #C6E2FA;
+}
+
+.stat__heading{
+    font-family: Sora;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #181E52;
+}
+
+.line{
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat__line--long{
+    content: "";
+    display: inline-block;
+    width: 118px;
+    height: 4px;
+    border-radius: 10px;
+    background: rgb(51,58,121,0.08);
+}
+
+.stat__line--short{
+    margin-top: 6px;
+    content: "";
+    display: inline-block;
+    width: 39px;
+    height: 4px;
+    border-radius: 10px;
+    background: rgb(51,58,121,0.08);
+}
+
+.hero__content{
+    width: 44%;
+}
+
+.hero__content-wrap{
+    margin-right: auto;
+}
+
+.hero__heading{
+    margin-bottom: 24px;
+    font-family: Sora;
+    font-weight: 800;
+    font-size: 6.6rem;
+    line-height: 1.5;
+    color: #000958;
+}
+
+.hero__desc{
+    margin-bottom: 38px;
+}
+
+.hero__cta{
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.hero__access{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    color: #FD5056;
+}
+
+.hero__btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    color: #FFFFFF;
+    border: 1px solid #FD5056;
+    background: #FF5B2E;
+    box-shadow: 0px 13px 26px -8px #FF5B2E6B;
+}
+
+.hero__links{
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: var(--primary-heading-color);
 }
