@@ -40,8 +40,7 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <!-- Header top -->
-            <div class="header-top">
+            <div class="header__inner">
                 <!-- Logo -->
                 <a class="Logo" href="/">
                     <img src="./assets/icons/Log-web.svg" alt="">
@@ -74,12 +73,20 @@
                     <a href="#!" class="btn header-action__signup">Sign Up</a>
                 </div>
             </div>
+        </div>
+    </header>
 
-            <div class="hero">
+    <!-- Hero -->
+    <section class="hero">
+       <div class="container">
+            <div class="hero__inner">
+                <!-- Hero media -->
                 <div class="hero__media">
-                    <div class="hero__media-wrap">
-                        <img src="./assets/img/hero-01.png" alt="hero 1" class="hero__img-01">
-                        <img src="./assets/img/hero-02.png" alt="hero 2" class="hero__img-02">
+                    <div class="hero__media-content">
+                        <div class="hero__img-wrap"><img src="./assets/img/hero-01.png" alt="hero 1" class="hero__img-01"></div>
+                        <div class="hero__img-wrap--small"><img src="./assets/img/hero-02.png" alt="hero 2" class="hero__img-02"></div>
+                        <img src="./assets/icons/img-hero-01.svg" alt="hero 2" class="hero__decor-01">
+                        <img src="./assets/icons/img-hero-02.svg" alt="hero 2" class="hero__decor-02">
                         <div class="hero__stat">
                             <div class="stat__group">
                                 <div class="stat__item">
@@ -92,7 +99,7 @@
                                     </div>
                                     </div>
                                 </div>
-    
+        
                                 <div class="stat__item">
                                     <img src="./assets/img/stat-thumb-02.png" alt="" class="stat__thumb">
                                     <div class="stat__content">
@@ -107,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Hero content -->
                 <div class="hero__content">
                     <div class="hero__content-wrap">
@@ -125,8 +132,38 @@
                     </div>
                 </div>
             </div>
+       </div>
+    </section>
+
+    <main>
+        <!-- About -->
+        <section class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__content">
+                        <p class="name__section">//  About  //</p>
+                        <h2 class="section-heading about__heading">Best Agency For Your Pet.</h2>
+                        <p class="section-desc about__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="about__group">
+                            <div class="group__required">Certified Groomer</div>
+                            <div class="group__required">Animal Lover</div>
+                            <div class="group__required">14+ Years Experience</div>
+                            <div class="group__required">Pet Parent Of 3 Dogs</div>
+                        </div>
+                    </div>
+
+                    <div class="about__media">
+                        <div class="about__img-wrap">
+                            <img src="./assets/img/about-01.png" alt="" class="about__img">
+                        </div>
+                        <div class="about__img--sub-desc">
+                            <img src="./assets/icons/about-img.svg" alt="" class="sub-desc--icon">
+                            <p class="sub-desc--script"><span class="value">20+</span>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </header>
+        </section>
+    </main>
 </body>
 </html>

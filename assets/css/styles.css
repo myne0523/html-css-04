@@ -15,6 +15,7 @@ html{
 body{
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    background: #FFFAF5;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -107,7 +108,6 @@ a{
 
 /* Header */
 .header{
-    min-height: 100vh;
     padding-top: 26px;
 }
 
@@ -120,8 +120,8 @@ a{
     color: var(--primary-heading-color);
 }
 
-/* Header top */
-.header-top{
+/* Header menu */
+.header__inner{
     position: relative;
     display: flex;
     align-items:center ;
@@ -164,6 +164,9 @@ a{
 /* Hero */
 .hero{
     margin-top: 100px;
+}
+
+.hero__inner{
     display: flex;
     justify-content: space-between;
 }
@@ -172,32 +175,66 @@ a{
     width: 52%;
 }
 
-.hero__media-wrap{
+.hero__media-content{
     position: relative;
     padding-bottom: 94px;
 }
 
-.hero__img-01{
+.hero__img-wrap{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     width: 388px;
     height: 488px;
-    object-fit: cover;
     border: 3px solid #FFFFFF;
     border-radius: 16px;
     background: linear-gradient(180deg, #FFA78D 0%, #FF8C60 100%);
     box-shadow: 11px 18px 65px 0px #FF9B791F;
 }
 
-.hero__img-02{
+.hero__img-wrap--small{
     position: absolute;
     left: 365px;
     bottom: 36px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     width: 186px;
     height: 244px;
     object-fit: cover;
     border: 2px solid #FFFFFFA6;
     border-radius: 16px;
     background: linear-gradient(205.64deg, #FAA7AD 4.68%, #E87F8A 98.09%);
+    box-shadow: 8px 18px 36px -6px #EA949D2B;
     z-index: 1;
+}
+
+.hero__img-01{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.hero__img-02{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.hero__decor-01{
+    position: absolute;
+    left: 376px;    
+    top: 16px;
+    z-index: -1;
+}
+
+.hero__decor-02{
+    position: absolute;
+    bottom: 84px;
+    left: -58px;
+    z-index: -1;
 }
 
 .stat__group{
@@ -281,6 +318,7 @@ a{
 }
 
 .hero__content{
+    padding: 71px 0;
     width: 44%;
 }
 
@@ -338,4 +376,125 @@ a{
     text-decoration: underline;
     text-decoration-style: solid;
     color: var(--primary-heading-color);
+}
+
+/* About */
+.about{
+    margin-top: 77px;
+}
+
+.about__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__content{
+    width: 40%;
+    padding: 77px 0;
+}
+
+.name__section{
+    margin-bottom: 15px;
+    font-family: Sora;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5E6085;
+}
+
+.about__heading{
+    margin-bottom: 24px;
+}
+
+.about__desc{
+    margin-bottom: 54px;
+}
+
+.about__group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.group__required{
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #48496A;
+}
+
+.group__required::before{
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 3px;
+    box-shadow: 0px 4px 15px -3px #FF5D31B0;
+    background: #FF5D31;
+}
+
+.about__media{
+    position: relative;
+    width: 55%;
+}
+
+
+.about__img-wrap{
+    position: absolute;
+    bottom: 0;
+    right: 31px;
+    content: "";
+    display: inline-block;
+    width: 494px;
+    height: 336px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #FCE0EF 0%, #FAC3D1 100%);
+}
+
+.about__img{
+    position: absolute;
+    right: 21px;
+    bottom: 0;
+    width: 450px;
+    height: 602px;
+    object-fit: cover;
+}
+
+.about__img--sub-desc{
+    position: absolute;
+    left: 12px;
+    bottom: 238px;
+    width: 136px;
+    height: 156px;
+    border-radius: 10px;
+    background: #5BD6E2;
+}
+
+
+.sub-desc--script .value{
+    display: block;
+    margin: 31px 0 14px 0;
+    font-family: Sora;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.sub-desc--script{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.42;
+    text-align: center;
+    color: #C6F4F9;
+}
+
+.sub-desc--icon{
+    position: absolute;
+    top: -40px;
+    right: -32px;
 }
